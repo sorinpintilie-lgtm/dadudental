@@ -1,0 +1,44 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "patient_name": {
+      "type": "string",
+      "description": "Numele pacientului"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Număr de telefon"
+    },
+    "email": {
+      "type": "string",
+      "description": "Adresa de email"
+    },
+    "service": {
+      "type": "string",
+      "enum": ["consultatie", "albire", "implant", "ortodontie", "chirurgie", "estetica", "pediatrie", "urgenta"],
+      "description": "Tipul serviciului dorit"
+    },
+    "preferred_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data preferată"
+    },
+    "preferred_time": {
+      "type": "string",
+      "enum": ["09:00", "10:00", "11:00", "12:00", "14:00", "15:00", "16:00", "17:00"],
+      "description": "Ora preferată"
+    },
+    "message": {
+      "type": "string",
+      "description": "Mesaj adițional"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["nou", "confirmat", "finalizat", "anulat"],
+      "default": "nou",
+      "description": "Statusul programării"
+    }
+  },
+  "required": ["patient_name", "phone", "service", "preferred_date"]
+}
