@@ -9,7 +9,7 @@ export default function HeroSection({ onScrollToAppointment }) {
       {/* Background image for mobile */}
       <div className="absolute inset-0 bg-cover bg-center md:hidden" 
            style={{ 
-             backgroundImage: `url('/happy-woman-with-a-bright-smile-2026-01-07-23-49-51-utc.jpg')` 
+             backgroundImage: `url('/happy-woman-with-a-bright-smile.jpg')` 
            }}
       >
         <div className="absolute inset-0 bg-slate-900/80" />
@@ -90,7 +90,7 @@ export default function HeroSection({ onScrollToAppointment }) {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-sky-400 to-blue-500 rounded-3xl transform rotate-3 opacity-20" />
               <img 
-                src="/happy-woman-with-a-bright-smile-2026-01-07-23-49-51-utc.jpg" 
+                src="/happy-woman-with-a-bright-smile.jpg" 
                 alt="Femeie fericită cu zâmbet strălucitor"
                 className="relative rounded-3xl shadow-2xl shadow-slate-200 w-full object-cover aspect-[4/5] object-top"
               />
